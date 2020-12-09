@@ -1,0 +1,23 @@
+An Amazon S3 bucket is a public cloud storage resource available in Amazon Web Services' (AWS) Simple Storage Service (S3), an object storage offering. Amazon S3 buckets, which are similar to file folders, store objects, which consist of data and its descriptive metadata.
+
+How to use an S3 bucket
+An S3 customer first creates a bucket in the AWS region of his or her choice and gives it a globally unique name. AWS recommends that customers choose regions geographically close to them to reduce latency and costs.
+
+Once the bucket has been created, the user then selects a tier for the data, with different S3 tiers having different levels of redundancy, prices and accessibility. One bucket can store objects from different S3 storage tiers.
+
+Amazon S3
+
+Amazon Simple Storage Service (Amazon S3) is a scalable, high-speed, web-based cloud storage service. The service...
+
+Creating a client
+
+When you create the client, you should specify an AWS Region, to create the client in. If you don’t specify a Region, Amazon S3 creates the client in US East (N. Virginia) by default Region. To create a client to access a dual-stack endpoint, you must specify an AWS Region,. For more information, see Dual-stack endpoints.
+
+When you create a client, the Region maps to the Region-specific endpoint. The client uses this endpoint to communicate with Amazon S3:
+
+s3.<region>.amazonaws.com
+
+For example, if you create a client by specifying the eu-west-1 Region, it maps to the following Region-specific endpoint:
+
+s3.eu-west-1.amazonaws.com
+

@@ -1,0 +1,46 @@
+driver -->{  
+  drivername:
+  email:
+  contactno:
+  address:
+  carmodel:
+
+}
+
+booking:{
+    vehicletype:
+    strt_point:
+    end_point:
+    price:
+    canceled:
+}
+
+notifications:{
+
+
+}
+
+db.getCollection('users').aggregate([{$match:{isDeleted:false,status:1,roles:"business"}},{$count:sum}])
+findOne({_id:ObjectId('5ea937502ae72d5de0e63c4d')})
+
+(256) 685-5802
+ +12566855802
+
+ SERVICE SID:-ISb1f432cce7aa55ec9ca012bb96bec0a8
+
+ Live --> 
+
+ 1. git pull
+ 2. npm i 
+ 3. pm2 ls / list
+ 2. pm2 reload (all/:id)
+
+
+AWS s3 Bucket --> 
+s3 --> File
+SES --> Simplified email SERVICE
+SNS --> Simplified Notification SERVICE
+
+NPM Package required for S3 Bucket
+1. multer-S3
+2. aws-sdk
